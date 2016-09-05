@@ -1,8 +1,9 @@
 splunk::areyousure: seriously
 
-splunk::httpport: 8000
+splunk::httpport:    8000
 splunk::kvstoreport: 8191
-splunk::inputport: 9997
+splunk::inputport:   9997
+
 #splunk::certtype: 'none'
 
 
