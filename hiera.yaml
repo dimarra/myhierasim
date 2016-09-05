@@ -1,0 +1,17 @@
+backends:
+  - yaml
+  - json
+:yaml:
+  :datadir: /etc/puppetlabs/code/environments/production/hieradata
+:json:
+  :datadir: /etc/puppetlabs/code/environments/production/hieradata
+:hierarchy:
+  - "%{calling_module}/node/%{hostname}"
+  - "%{calling_module}/cluster/%{cluster}"
+  - "%{calling_module}/role/%{role}"
+  - "%{calling_module}/%{operatingsystem}"
+  - "%{calling_module}/common"
+  - "%{::clientcert}"
+  - "%{::custom_location}"
+  - common
+
