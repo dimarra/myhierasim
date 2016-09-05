@@ -1,4 +1,4 @@
-splunk::ds:     'ip-172-31-28-232.ap-southeast-2.compute.internal:9997'
+splunk::ds:     'ip-172-31-28-232.ap-southeast-2.compute.internal:8089'
 splunk::tcpout: 'ip-172-31-18-136.ap-southeast-2.compute.internal:9997'
 
 splunk::sslcompatibility: intermediate
