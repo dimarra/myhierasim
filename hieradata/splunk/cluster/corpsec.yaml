@@ -3,10 +3,18 @@ splunk::tcpout: 'ip-172-31-18-136.ap-southeast-2.compute.internal:9997'
 
 splunk::sslcompatibility: 'intermediate'
 
+splunk::webhook: 'test'
+
 splunk::service:
   enable: true
   ensure: running
   
+splunk::admin
+  fn: 'CorpSec Splunk Admin'
+  email: 'corpsec@shelde.com'
+  hash: '$6$MR9IJFF7RBnVA.k1$/30EBSzy0EJKZ94SjHFIUHjQjO3/P/4tx0JmWCp/En47MJceaXsevhBLE2w/ibjHlAUkD6k0U.PmY/noe9Jok0'
+  
+
 
 
 
